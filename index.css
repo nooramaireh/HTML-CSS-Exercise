@@ -1,69 +1,84 @@
-body{
-    background-color: #C897E4;
-    background-size:cover; 
+body {
+    background-image: url("./images/background.svg");
+    background-color: #cccccc;
 }
 
-.responsive{
-    position: absolute;    
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -50%);
-    color: blue;
-	border : 2px solid white ; 
+header {
+    display: flex;
+    margin: 1em 2em 1em;
+    justify-content: space-between;
+}
+
+header img {
+    display: inline-block;
+}
+
+header nav {
+    width: 50%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color:gray;
+
+}
+header ul il :hover {
+    opacity: 0.6;
+}
+
+header nav ul il.active a{
+	color: blue;
+}
+ 
+.contact-us{
+    border : 0.2em solid black ; 
+    background-color: black;
+    color: white;
 	border-radius: 10px;
-	padding: 15px 20px;
-
-}
-.titleContent{
-    position: absolute;
-    left: 50%;
-    top: 20%;
-	transform: translate(-50%, -50%);
-    color:white ;	
-	text-align: center ;
-    font-size: 20px;   
+	padding: 1.00em 2.00em;
+    text-decoration: none;
 }
 
-.webPage{
-    position: absolute;
-	top: 70%;
-	left:45%;
-	transform: translate(-50%, -50%);
-    background-color: white;
-    background-size:cover; 
-    width:1050px; height:500px;
-    border-radius:15px;
+.contact-us:hover {
+    border-color: #5468E7 ;
+	background-color  :  #5468E7 ;
+	color: white;
+	transition: 1.5s ease ; 
 }
 
-.logo{
-    position: fixed;
-    top: 10%;
-	left:10%;
-	transform: translate(-70%, -30%);
-    width: 100px;
-    height: 40px;
-}
-ul{
-	/* float: right; */
-    position: fixed;
-    top: 10%;
-	left:50%;
-	transform: translate(-70%, -60%);
-	/* list-style-type: none; */
-}
-li{
-	display: inline-block;
-	vertical-align: middle;
-}
-ul li a{
-	color:gray;
-	text-decoration: none;
-	font-size: 20px;
-	vertical-align: middle;
-	letter-spacing: 5px;
-	padding: 10px;
+h1 {
+    display: inline-block;
+    font-size: 4em;
+    margin-top: 0.67em;
+    margin-left: 2.00em;
     font-weight: bold;
 }
-ul li.active a{
-	color: blue;
+
+p {
+    font-size: 1.00em;
+    margin-left: 7.00em;
+    margin-bottom: 3.00em ;
+    color: gray;
+}
+ .recent-works{
+    border : 0.2em solid #5468E7 ; 
+    background-color: #5468E7;
+    color: white;
+	border-radius: 10px;
+	padding: 1.00em 2.00em;
+    margin-left: 7.00em;
+    text-decoration: none;
+ }
+
+ .recent-works:hover {
+    border-color: gray;
+	background-color  :  gray;
+	color: white;
+	transition: 1.5s ease ; 
 }
